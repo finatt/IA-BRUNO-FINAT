@@ -1,0 +1,8 @@
+/* Movimiento de las agujas del reloj */
+@keyframes girar-hora { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+@keyframes girar-minuto { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+@keyframes girar-segundo { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+/* Robot que se mueve de izquierda a derecha */
+@keyframes flotar { from { transform:translateX(0); } to { transform:translateX(250px); } }
+/* Cuadro informativo que se desplaza */
+@keyframes mover-cuadro { from { transform:translateX(0); } to { transform:translateX(80px); } }

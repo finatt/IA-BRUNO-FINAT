@@ -1,0 +1,34 @@
+/* Estilos generales */
+body { font-family: Arial, Helvetica, sans-serif; background:#f4f6f8; color:#222; margin:0; line-height:1.5; }
+/* Cabecera */
+header { background:#dceaf5; color:#17324d; text-align:center; padding:22px; border-bottom:2px solid #8aaec9; }
+/* Índice */
+nav { background:#e8eef3; text-align:center; padding:12px; }
+nav a { color:#17324d; margin:8px; text-decoration:none; font-weight:bold; }
+nav a:hover { text-decoration:underline; }
+/* Contenido */
+main { width:85%; max-width:950px; margin:20px auto; }
+section { background:white; padding:18px; margin-bottom:18px; border:1px solid #cbd5de; border-radius:5px; }
+h2 { color:#24577a; font-family:Georgia, serif; }
+/* Tabla */
+table { width:100%; border-collapse:collapse; }
+td, th { border:1px solid #9baab6; padding:10px; text-align:left; }
+th { background:#e8eef3; }
+a { color:#174f7a; }
+/* Pie */
+footer { background:#dceaf5; color:#17324d; text-align:center; padding:12px; }
+/* Apartado de animaciones */
+.animaciones { background:#f8fbfd; }
+.reloj { width:130px; height:130px; border:5px solid #24577a; border-radius:50%; margin:15px auto; position:relative; background:white; }
+.aguja { position:absolute; bottom:50%; left:50%; transform-origin:bottom; border-radius:5px; }
+.hora { width:5px; height:32px; background:#222; animation:girar-hora 60s linear infinite; }
+.minuto { width:3px; height:48px; background:#24577a; animation:girar-minuto 10s linear infinite; }
+.segundo { width:2px; height:55px; background:#b33a3a; animation:girar-segundo 10s linear infinite; }
+.centro-reloj { position:absolute; width:9px; height:9px; background:#222; border-radius:50%; left:calc(50% - 4px); top:calc(50% - 4px); }
+.globo-gif { width:110px; display:block; margin:10px auto; }
+.imagen-flotante { font-size:40px; width:70px; animation:flotar 5s linear infinite alternate; }
+.cuadro-movil { background:#e8eef3; border:1px solid #8aaec9; padding:10px; margin-top:15px; width:80%; animation:mover-cuadro 6s ease-in-out infinite alternate; }
+/* Ajustes para móviles */
+@media (max-width:600px) { main { width:93%; } nav a { display:inline-block; margin:5px; } .cuadro-movil { width:auto; } }
+/* Estilos para imprimir gastando poca tinta */
+@media print { body, section, header, footer { background:white; color:black; } nav, .reloj, .globo-gif, .imagen-flotante, .cuadro-movil { display:none; } }
